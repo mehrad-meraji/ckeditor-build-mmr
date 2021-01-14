@@ -105,23 +105,23 @@ ClassicEditor.defaultConfig = {
 	documentColors: 0,
 	colors: [
 	  {
-		color: 'var(--charcoal-text, #393b3f)',
+		color: 'var(--charcoal-text, var(--gray-7-text, #393b3f))',
 		label: 'Black'
 	  },
 	  {
-		color: 'var(--orange-500-text, #9a2802)',
+		color: 'var(--orange-500-text, var(--orange-4-text, #9a2802))',
 		label: 'Orange'
 	  },
 	  {
-		color: 'var(--forest-500-text, #286230)',
+		color: 'var(--forest-500-text, var(--green-4-text, #286230))',
 		label: 'Green'
 	  },
 	  {
-		color: 'var(--royal-500-text, #1b3273)',
+		color: 'var(--royal-500-text, var(--blue-4-text, #1b3273))',
 		label: 'Blue'
 	  },
 	  {
-		color: 'var(--lavendar-500-text, #57418e)',
+		color: 'var(--lavendar-500-text, var(--purple-3-text, #57418e))',
 		label: 'Purple'
 	  },
 
