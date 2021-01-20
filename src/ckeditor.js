@@ -116,7 +116,7 @@ ClassicEditor.defaultConfig = {
 		label: 'Default'
 	  },
 	  {
-		color: 'var(--orange-500-text, var(--orange-4-text, #9a2802))',
+		color: '#9a2802',
 		label: 'Orange'
 	  },
 	  {
