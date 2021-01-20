@@ -2740,12 +2740,15 @@ label.ck.ck-color-grid__label {
 
 	--ck-color-link-default: hsl(190, 100%, 75%);
 }
-.ck-content.ck-content .marker-blue {
-	background-color: var(--royal-200-background, var(--blue-2-background, #cbd9ed));
-}
-.ck-content.ck-content .marker-green {
-	background-color: var(--forest-200-background, var(--green-background, #C4DAC8));
+.ck-content.ck-content .marker-pink {
+	background-color: var(--hipink-400-fill, #FF6BF0);
 }
 .ck-content.ck-content .marker-yellow {
-	background-color: var(--sun-300-background, var(--yellow-2-background, #ffd497));
+	background-color: var(--hiyellow-400-fill, #FEFF00);
+}
+.ck-content.ck-content .marker-green {
+	background-color: var(--higreen-400-fill, #00FF00);
+}
+.ck-content.ck-content .marker-blue {
+	background-color: var(--hiblue-400-fill, #03FFFF);
 }

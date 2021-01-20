@@ -79,24 +79,31 @@ ClassicEditor.defaultConfig = {
   highlight: {
 	options: [
 	  {
+		model: 'pinkMarker',
+		class: 'marker-pink',
+		title: 'Pink marker',
+		color: 'var(--hipink-400-fill, #FF6BF0)',
+		type: 'marker'
+	  },
+	  {
 		model: 'yellowMarker',
 		class: 'marker-yellow',
 		title: 'Yellow marker',
-		color: 'var(--sun-400-background, var(--yellow-2-background, #ffd497))',
+		color: 'var(--hiyellow-400-fill, #FEFF00)',
 		type: 'marker'
 	  },
 	  {
 		model: 'greenMarker',
 		class: 'marker-green',
 		title: 'Green marker',
-		color: 'var(--forest-400-background, var(--green-3-background, #C4DAC8))',
+		color: 'var(--higreen-400-fill, #00FF00)',
 		type: 'marker'
 	  },
 	  {
 		model: 'blueMarker',
 		class: 'marker-blue',
 		title: 'Blue marker',
-		color: 'var(--royal-400-background, var(--blue-3-background, #cbd9ed))',
+		color: 'var(--hiblue-400-fill, #03FFFF)',
 		type: 'marker'
 	  }
 	]
@@ -106,7 +113,7 @@ ClassicEditor.defaultConfig = {
 	colors: [
 	  {
 		color: 'var(--charcoal-text, var(--gray-7-text, #393b3f))',
-		label: 'Black'
+		label: 'Default'
 	  },
 	  {
 		color: 'var(--orange-500-text, var(--orange-4-text, #9a2802))',
