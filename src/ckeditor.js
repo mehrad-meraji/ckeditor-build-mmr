@@ -112,7 +112,7 @@ ClassicEditor.defaultConfig = {
 	documentColors: 0,
 	colors: [
 	  {
-		color: 'var(--charcoal-text, var(--gray-7-text, #393b3f))',
+		color: 'var(--charcoal-text, var(--charcoal-text, #393b3f))',
 		label: 'Default'
 	  },
 	  {
