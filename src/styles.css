@@ -2755,6 +2755,11 @@ label.ck.ck-color-grid__label {
 .ck-content.ck-content ul {
   display: block;
   list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
   margin-before: 1em;
   margin-after: 1em;
   margin-start: 0;
@@ -2769,4 +2774,9 @@ label.ck.ck-color-grid__label {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 40px;
+  margin-before: 1em;
+  margin-after: 1em;
+  margin-start: 0;
+  margin-end: 0;
+  padding-start: 40px;
 }
