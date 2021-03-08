@@ -23,12 +23,11 @@ import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformatio
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
 import FontSize from '@ckeditor/ckeditor5-font/src/fontsize';
 import FontColor from '@ckeditor/ckeditor5-font/src/fontcolor';
-
-export default class ClassicEditor extends ClassicEditorBase {}
-
-import './styles.css';
 import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
 import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
+import './styles.css';
+
+export default class ClassicEditor extends ClassicEditorBase {}
 
 // Plugins to include in the build.
 ClassicEditor.builtinPlugins = [
@@ -144,7 +143,7 @@ ClassicEditor.defaultConfig = {
   },
   link: {
 	// Automatically add target="_blank" and rel="noopener noreferrer" to all external links.
-	addTargetToExternalLinks: true,
+    addTargetToExternalLinks: true,
   },
   // This value must be kept in sync with the language defined in webpack.config.js.
   language: 'en'
