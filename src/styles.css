@@ -2740,7 +2740,7 @@ label.ck.ck-color-grid__label {
 
 	--ck-color-link-default: hsl(190, 100%, 75%);
 }
-.ck-content.ck-content {
+.ck-content.ck-content td, .ck-content.ck-content th {
   font-weight: 300;
 }
 .ck-content.ck-content .marker-pink {
