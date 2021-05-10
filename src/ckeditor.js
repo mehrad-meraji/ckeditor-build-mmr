@@ -45,7 +45,7 @@ const mmrColors = {
 	'brown': 'var(--charcoal-text, #393b3f)',
 	'black': 'var(--charcoal-text, #393b3f)',
 	'grey': 'var(--charcoal-text, #393b3f)',
-	'white': '#ffffff',
+	'white': 'var(--charcoal-text, #393b3f)',
 
 	'var(--charcoal-text, #393b3f)': '#393b3f',
 	'var(--lavendar-500-text, #57418e)': '#57418e',
