@@ -92,7 +92,7 @@ class RemoveStaticColors extends Plugin {
 				}
 				const shade = (initialValue.split('#').length > 1) ?
 					ntc.name(initialValue)[3].toLowerCase() :
-					htmlColors[initialValue].shade;
+					htmlColors[initialValue] ? htmlColors[initialValue].shade : mmrColors['DEFAULT'];
 				return viewWriter.createAttributeElement( 'span', {
 					style: `color:${ mmrColors[shade] ? mmrColors[shade] : mmrColors['DEFAULT'] }`
 				} );
