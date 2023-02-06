@@ -30,6 +30,8 @@ import FontSize from '@ckeditor/ckeditor5-font/src/fontsize';
 import FontColor from '@ckeditor/ckeditor5-font/src/fontcolor';
 import Highlight from '@ckeditor/ckeditor5-highlight/src/highlight';
 import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
+import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials';
+
 import './styles.css';
 import ntc from './ntc';
 import {htmlColors} from "./colorConvert";
@@ -131,6 +133,7 @@ ClassicEditor.builtinPlugins = [
 	FontColor,
 	Highlight,
 	RemoveStaticColors,
+	Essentials,
 ];
 
 // Editor configuration.
