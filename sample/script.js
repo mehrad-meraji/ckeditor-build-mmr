@@ -1,11 +1,11 @@
 const watchdog = new CKSource.EditorWatchdog();
-
 window.watchdog = watchdog;
 
 watchdog.setCreator( ( element, config ) => {
 	return CKSource.Editor
 		.create( element, config )
 		.then( editor => {
+			CKEditorInspector.attach( editor );
 			return editor;
 		} );
 } );

@@ -39,7 +39,8 @@ import { Undo } from '@ckeditor/ckeditor5-undo';
 import { EditorWatchdog } from '@ckeditor/ckeditor5-watchdog';
 import { WordCount } from '@ckeditor/ckeditor5-word-count';
 import './styles.css';
-import {RemoveStaticColors} from "./plugins/removeStaticColors";
+import {RemoveStaticColors} from "./plugins/remove-static-colors/removeStaticColors";
+import {RemoveLinks} from "./plugins/removeLinks";
 
 // You can read more about extending the build with additional plugins in the "Installing plugins" guide.
 // See https://ckeditor.com/docs/ckeditor5/latest/installation/plugins/installing-plugins.html for details.
@@ -75,7 +76,8 @@ class Editor extends ClassicEditor {
 		Underline,
 		Undo,
 		WordCount,
-		RemoveStaticColors
+		RemoveStaticColors,
+		// RemoveLinks
 	];
 
 	public static override defaultConfig: EditorConfig = {
