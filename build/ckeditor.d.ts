@@ -25,10 +25,9 @@ import { TextTransformation } from '@ckeditor/ckeditor5-typing';
 import { Undo } from '@ckeditor/ckeditor5-undo';
 import { EditorWatchdog } from '@ckeditor/ckeditor5-watchdog';
 import { WordCount } from '@ckeditor/ckeditor5-word-count';
-import './styles.css';
 import { RemoveStaticColors } from "./plugins/remove-static-colors/removeStaticColors";
 declare class Editor extends ClassicEditor {
-    static builtinPlugins: (typeof RemoveStaticColors | typeof FontColor | typeof Link | typeof AutoLink | typeof Alignment | typeof Autoformat | typeof Autosave | typeof BlockQuote | typeof Bold | typeof Essentials | typeof FindAndReplace | typeof FontSize | typeof Heading | typeof Highlight | typeof Indent | typeof Italic | typeof List | typeof Paragraph | typeof PasteFromOffice | typeof RemoveFormat | typeof Strikethrough | typeof Table | typeof TableCellProperties | typeof TableColumnResize | typeof TableProperties | typeof TableToolbar | typeof TextTransformation | typeof Underline | typeof Undo | typeof WordCount)[];
+    static builtinPlugins: (typeof RemoveStaticColors | typeof FontColor | typeof Alignment | typeof AutoLink | typeof Autoformat | typeof Autosave | typeof BlockQuote | typeof Bold | typeof Essentials | typeof FindAndReplace | typeof FontSize | typeof Heading | typeof Highlight | typeof Indent | typeof Italic | typeof Link | typeof List | typeof Paragraph | typeof PasteFromOffice | typeof RemoveFormat | typeof Strikethrough | typeof Table | typeof TableCellProperties | typeof TableColumnResize | typeof TableProperties | typeof TableToolbar | typeof TextTransformation | typeof Underline | typeof Undo | typeof WordCount)[];
     static defaultConfig: EditorConfig;
 }
 declare const _default: {
