@@ -1,6 +1,6 @@
 {
-  "name": "@_mehrad/ckeditor5-build-mmr",
-  "version": "41.3.1",
+  "name": "@mindoula/ckeditor5-build-mmr",
+  "version": "41.3.103",
   "description": "The mmr editor build of CKEditor 5 – the best browser-based rich text editor.",
   "author": "Mindoula",
   "license": "SEE LICENSE IN LICENSE.md",
@@ -36,7 +36,7 @@
     "@ckeditor/ckeditor5-dev-translations": "^32.1.2",
     "@ckeditor/ckeditor5-dev-utils": "^32.1.2",
     "@ckeditor/ckeditor5-inspector": "^4.1.0",
-    "@ckeditor/ckeditor5-theme-lark": "41.3.1",
+    "@ckeditor/ckeditor5-theme-lark": "^41.3.1",
     "css-loader": "^5.2.7",
     "postcss": "^8.4.38",
     "postcss-loader": "^4.3.0",
@@ -52,6 +52,6 @@
     "build": "webpack --mode production",
     "develop": "webpack --mode development",
     "postbuild": "tsc --declaration --declarationDir build --stripInternal --emitDeclarationOnly",
-    "publish": "build && npm publish --access public"
+    "publish": "npm publish --access public"
   }
 }
