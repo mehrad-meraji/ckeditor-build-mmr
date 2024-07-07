@@ -1,0 +1,61 @@
+.ck {
+  --ck-color-base-border: var(--ice-200-background);
+  --ck-color-toolbar-background: var(--ice-50-background);
+  --ck-color-button-on-color: var(--charcoal-background);
+  --ck-color-button-on-background: var(--ice-100-background);
+  --ck-color-button-on-hover-background: var(--ice-200-background);
+  --ck-color-list-button-on-background-focus: var(--ice-200-background);
+  --ck-color-list-button-on-background: var(--ice-200-background);
+  --ck-color-list-button-on-text: var(--charcoal-background);
+  --ck-color-button-default-hover-background: var(--ice-200-background);
+  --ck-color-split-button-hover-background: var(--ice-200-background);
+  --ck-color-dropdown-panel-background: var(--ice-50-background);
+  --ck-color-list-background: var(--ice-50-background);
+  --ck-color-list-button-hover-background: var(--ice-200-background);
+  --ck-color-toolbar-border: var(--ice-200-background);
+  --ck-color-dropdown-panel-border: var(--ice-200-background);
+  --ck-color-panel-border: var(--ice-200-background);
+  --ck-color-switch-button-off-background: var(--ice-100-background);
+  --ck-color-switch-button-on-background: var(--ice-200-background);
+  --ck-color-text: var(--charcoal-background);
+  --ck-color-panel-background: var(--ice-50-background);
+  font-weight: 300;
+}
+.ck-editor .ck-powered-by-balloon { display: none; }
+.ck.ck-editor__top .ck-sticky-panel .ck-sticky-panel__content {
+  background-color: var(--ice-50-background);
+}
+.ck-rounded-corners .ck.ck-editor__top .ck-sticky-panel .ck-toolbar,
+.ck.ck-editor__top .ck-sticky-panel .ck-toolbar.ck-rounded-corners {
+  border-radius: var(--mmr-ck-editor__top-radius, 4px) var(--mmr-ck-editor__top-radius, 4px) 0 0;
+}
+.ck-rounded-corners .ck.ck-editor__main > .ck-editor__editable,
+.ck.ck-editor__main > .ck-editor__editable.ck-rounded-corners {
+  border-radius: 0 0 var(--mmr-ck-editor__bottom-radius, 4px) var(--mmr-ck-editor__bottom-radius, 4px);
+}
+.ck-editor .ck-editor__editable {
+  background-color: var(--mmr-ck-editor__editable-background) !important;
+  min-height: var(--mmr-ck-editor__min-height, 260px) !important;
+  max-height: var(--mmr-ck-editor__max-height, 260px) !important;
+}
+.ck-content ul, ol {
+  margin: revert;
+  padding: revert;
+}
+.rte--not-focused .ck.ck-toolbar {
+  visibility: hidden;
+}
+html[data-theme='dark'] .mmr .ck {
+  --ck-color-text: var(--charcoal-background);
+  --ck-color-button-on-background: var(--ice-200-background);
+  --ck-color-dropdown-panel-background: var(--ice-100-background);
+  --ck-color-list-background: var(--ice-100-background);
+}
+
+html[data-theme='dark'] .mmr .ck-editor .ck-editor__editable {
+  --mmr-ck-editor__editable-background: var(--ice-100-background)
+}
+
+html[data-theme='dark'] .mmr.ck.ck-toolbar {
+  --ck-color-toolbar-background: var(--ice-100-background)
+}

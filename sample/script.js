@@ -2,7 +2,7 @@ const watchdog = new CKSource.EditorWatchdog();
 window.watchdog = watchdog;
 
 watchdog.setCreator( ( element, config ) => {
-	return CKSource.Editor
+	return CKSource
 		.create( element, config )
 		.then( editor => {
 			CKEditorInspector.attach( editor );

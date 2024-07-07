@@ -3,42 +3,11 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
  */
 
-import { ClassicEditor } from '@ckeditor/ckeditor5-editor-classic';
+import { ClassicEditor, Alignment, Autoformat, Autosave, Bold, Italic, Strikethrough, Underline, BlockQuote, Essentials, EditorConfig, FindAndReplace, FontColor, FontSize, Heading, Highlight, Indent, AutoLink, Link, List, Paragraph, PasteFromOffice, RemoveFormat, Table, TableCellProperties, TableColumnResize, TableProperties, TableToolbar, TextTransformation, Undo, EditorWatchdog, WordCount } from 'ckeditor5';
 
-import { Alignment } from '@ckeditor/ckeditor5-alignment';
-import { Autoformat } from '@ckeditor/ckeditor5-autoformat';
-import { Autosave } from '@ckeditor/ckeditor5-autosave';
-import {
-  Bold,
-  Italic,
-  Strikethrough,
-  Underline
-} from '@ckeditor/ckeditor5-basic-styles';
-import { BlockQuote } from '@ckeditor/ckeditor5-block-quote';
-import type { EditorConfig } from '@ckeditor/ckeditor5-core';
-import { Essentials } from '@ckeditor/ckeditor5-essentials';
-import { FindAndReplace } from '@ckeditor/ckeditor5-find-and-replace';
-import { FontColor, FontSize } from '@ckeditor/ckeditor5-font';
-import { Heading } from '@ckeditor/ckeditor5-heading';
-import { Highlight } from '@ckeditor/ckeditor5-highlight';
-import { Indent } from '@ckeditor/ckeditor5-indent';
-import { AutoLink, Link } from '@ckeditor/ckeditor5-link';
-import { List } from '@ckeditor/ckeditor5-list';
-import { Paragraph } from '@ckeditor/ckeditor5-paragraph';
-import { PasteFromOffice } from '@ckeditor/ckeditor5-paste-from-office';
-import { RemoveFormat } from '@ckeditor/ckeditor5-remove-format';
-import {
-  Table,
-  TableCellProperties,
-  TableColumnResize,
-  TableProperties,
-  TableToolbar
-} from '@ckeditor/ckeditor5-table';
-import { TextTransformation } from '@ckeditor/ckeditor5-typing';
-import { Undo } from '@ckeditor/ckeditor5-undo';
-import { EditorWatchdog } from '@ckeditor/ckeditor5-watchdog';
-import { WordCount } from '@ckeditor/ckeditor5-word-count';
 import { RemoveStaticColors } from "./plugins/remove-static-colors/removeStaticColors";
+import 'ckeditor5/ckeditor5.css';
+import "./styles.css";
 
 // You can read more about extending the build with additional plugins in the "Installing plugins" guide.
 // See https://ckeditor.com/docs/ckeditor5/latest/installation/plugins/installing-plugins.html for details.
@@ -138,19 +107,19 @@ class Editor extends ClassicEditor {
           label: 'Default'
         },
         {
-          color: '#9a2802',
+          color: 'var(--orange-500-background, #9a2802)',
           label: 'Orange'
         },
         {
-          color: 'var(--forest-500-text, #286230)',
+          color: 'var(--forest-500-background, #286230)',
           label: 'Green'
         },
         {
-          color: 'var(--royal-500-text, #1b3273)',
+          color: 'var(--royal-500-background, #1b3273)',
           label: 'Blue'
         },
         {
-          color: 'var(--lavendar-500-text, #57418e)',
+          color: 'var(--lavendar-500-background, #57418e)',
           label: 'Purple'
         },
 
@@ -174,4 +143,7 @@ class Editor extends ClassicEditor {
   };
 }
 
-export default { Editor, EditorWatchdog };
+export default Editor;
+
+export {EditorWatchdog};
+

@@ -1,5 +1,4 @@
-import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
-import {FontColor} from "@ckeditor/ckeditor5-font";
+import {FontColor, Plugin} from "ckeditor5";
 import ntc from "./ntc";
 import {htmlColors, mmrColors} from "./colorConvert";
 
