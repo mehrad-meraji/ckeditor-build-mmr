@@ -1,6 +1,6 @@
 {
   "name": "@_mehrad/ckeditor5-build-mmr",
-  "version": "41.3.103",
+  "version": "42.0.3",
   "description": "The mmr editor build of CKEditor 5 – the best browser-based rich text editor.",
   "author": "Mindoula",
   "license": "SEE LICENSE IN LICENSE.md",
@@ -8,8 +8,8 @@
   "main": "./build/ckeditor.js",
   "types": "./build/ckeditor.d.ts",
   "devDependencies": {
-    "@ckeditor/ckeditor5-dev-translations": "^40.2.3",
-    "@ckeditor/ckeditor5-dev-utils": "^40.2.3",
+    "@ckeditor/ckeditor5-dev-translations": "^40.3.1",
+    "@ckeditor/ckeditor5-dev-utils": "^40.3.1",
     "@ckeditor/ckeditor5-inspector": "^4.1.0",
     "css-loader": "^7.1.2",
     "postcss": "^8.4.39",

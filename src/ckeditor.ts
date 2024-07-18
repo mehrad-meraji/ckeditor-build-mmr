@@ -3,7 +3,7 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
  */
 
-import { ClassicEditor, Alignment, Autoformat, Autosave, Bold, Italic, Strikethrough, Underline, BlockQuote, Essentials, EditorConfig, FindAndReplace, FontColor, FontSize, Heading, Highlight, Indent, AutoLink, Link, List, Paragraph, PasteFromOffice, RemoveFormat, Table, TableCellProperties, TableColumnResize, TableProperties, TableToolbar, TextTransformation, Undo, EditorWatchdog, WordCount } from 'ckeditor5';
+import { ClassicEditor, Alignment, Autoformat, Autosave, Bold, Italic, Strikethrough, Underline, BlockQuote, Essentials, EditorConfig, FindAndReplace, FontColor, FontSize, Heading, Highlight, Indent, AutoLink, Link, List, Paragraph, PasteFromOffice, RemoveFormat, Table, TableCellProperties, TableColumnResize, TableProperties, TableToolbar, TextTransformation, Undo, EditorWatchdog, WordCount, Image, ImageCaption, ImageResize, ImageStyle, ImageToolbar, LinkImage } from 'ckeditor5';
 
 import { RemoveStaticColors } from "./plugins/remove-static-colors/removeStaticColors";
 import 'ckeditor5/ckeditor5.css';
@@ -44,6 +44,12 @@ class Editor extends ClassicEditor {
     Undo,
     WordCount,
     RemoveStaticColors,
+    Image,
+    ImageCaption,
+    ImageResize,
+    ImageStyle,
+    ImageToolbar,
+    LinkImage
     // RemoveLinks
   ];
 
